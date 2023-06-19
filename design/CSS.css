@@ -1,0 +1,415 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 1440px;
+  height: 925px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+#container {
+  width: 69.6875rem;
+  height: 47.8125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#header-main-info {
+  width: 28.125rem;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#header-main-info > p:nth-child(1) {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.875rem;
+  font-family: "Poppins", sans-serif;
+}
+#header-main-info > h1 {
+  font-size: 2.1875rem;
+  font-family: "Poppins", sans-serif;
+  color: hsl(234, 12%, 34%);
+}
+#header-main-info > p:nth-child(3) {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9375rem;
+}
+
+.contain-info {
+  width: 69.6875rem;
+  height: 33.125rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 10.625rem);
+  grid-template-rows: repeat(3, 11.875rem);
+  justify-content: space-evenly;
+}
+.contain-info > div {
+  width: 21.875rem;
+  height: 15.625rem;
+}
+.contain-info > .supervisor {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(7, 2.5rem);
+  grid-template-rows: repeat(3, 2.8125rem);
+  padding: 1.25rem;
+  border-top: 0.3125rem solid hsl(180, 62%, 55%);
+  border-radius: 0.3125rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0.625rem 0.625rem 1.25rem 0rem hsl(229, 6%, 66%);
+}
+.contain-info > .supervisor > h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5625rem;
+  grid-row-start: 1;
+  color: hsl(234, 12%, 34%);
+}
+
+.contain-info > .supervisor > p {
+  width: 16.875rem;
+  grid-row-start: 2;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9375rem;
+}
+.contain-info > .supervisor > img {
+  grid-row-start: 10;
+  grid-column-start: 7;
+}
+.contain-info > .team-builder {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 21.875rem;
+  height: 15.625rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(1, 10.625rem);
+  grid-template-rows: repeat(3, 2.5rem);
+  padding: 1.25rem;
+  border-top: 0.3125rem solid hsl(0, 78%, 62%);
+  border-radius: 0.3125rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0.625rem 0.625rem 1.25rem 0rem hsl(229, 6%, 66%);
+}
+.contain-info > .team-builder > h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5625rem;
+  grid-row-start: 1;
+  color: hsl(234, 12%, 34%);
+}
+
+.contain-info > .team-builder > p {
+  width: 16.875rem;
+  grid-row-start: 2;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9375rem;
+}
+.contain-info > .team-builder > img {
+  grid-row-start: 10;
+  grid-column-start: 7;
+}
+.contain-info > .karma {
+  width: 21.875rem;
+  height: 15.625rem;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(7, 2.5rem);
+  grid-template-rows: repeat(3, 2.8125rem);
+  padding: 1.25rem;
+  border-top: 0.3125rem solid hsl(34, 97%, 64%);
+  border-radius: 0.3125rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0.625rem 0.625rem 1.25rem 0rem hsl(229, 6%, 66%);
+}
+.contain-info > .karma > h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5625rem;
+  grid-row-start: 1;
+  color: hsl(234, 12%, 34%);
+}
+
+.contain-info > .karma > p {
+  width: 16.875rem;
+  grid-row-start: 2;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9375rem;
+}
+.contain-info > .karma > img {
+  grid-row-start: 10;
+  grid-column-start: 7;
+}
+.contain-info > .calculator {
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 21.875rem;
+  height: 15.625rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(7, 2.5rem);
+  grid-template-rows: repeat(3, 2.8125rem);
+  padding: 1.25rem;
+  border-top: 0.3125rem solid hsl(212, 86%, 64%);
+  border-radius: 0.3125rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0.625rem 0.625rem 1.25rem 0rem hsl(229, 6%, 66%);
+}
+.contain-info > .calculator > h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5625rem;
+  grid-row-start: 1;
+  color: hsl(234, 12%, 34%);
+}
+
+.contain-info > .calculator > p {
+  width: 16.875rem;
+  grid-row-start: 2;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9375rem;
+}
+.contain-info > .calculator > img {
+  grid-row-start: 10;
+  grid-column-start: 7;
+}
+@media screen and (max-width: 375px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    width: 375px;
+    height: 1360px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  #container {
+    width: 19.375rem;
+    height: 74.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #header-main-info {
+    width: 19.0625rem;
+    height: 9.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
+  #header-main-info > p:nth-child(1) {
+    color: hsl(229, 6%, 66%);
+    font-size: 1.25rem;
+
+    font-family: "Poppins", sans-serif;
+  }
+  #header-main-info > h1 {
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    color: hsl(234, 12%, 34%);
+  }
+  #header-main-info > p:nth-child(3) {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9375rem;
+  }
+
+  .contain-info {
+    width: 20rem;
+    height: 60.625rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contain-info > div {
+    width: 19.0625rem;
+    height: 13.75rem;
+  }
+  .contain-info > .supervisor {
+    width: 19.0625rem;
+    height: 13.75rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: repeat(2, 5rem);
+    grid-template-rows: repeat(2, 2.8125rem);
+    background-color: white;
+    display: grid;
+    padding: 1.25rem;
+    border-top: 0.3125rem solid hsl(180, 62%, 55%);
+    border-radius: 0.3125rem;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem 0rem hsl(229, 6%, 66%);
+  }
+  .contain-info > .supervisor > h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.5625rem;
+    grid-row-start: 1;
+    color: hsl(234, 12%, 34%);
+  }
+
+  .contain-info > .supervisor > p {
+    width: 16.875rem;
+    grid-row-start: 2;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9375rem;
+  }
+  .contain-info > .supervisor > img {
+    grid-row-start: 5;
+    grid-column-start: 5;
+  }
+  .contain-info > .team-builder {
+    width: 19.0625rem;
+    height: 13.75rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: repeat(1, 11.25rem);
+    grid-template-rows: repeat(2, 2.8125rem);
+    background-color: white;
+    display: grid;
+    padding: 1.25rem;
+    border-top: 0.3125rem solid hsl(0, 78%, 62%);
+    border-radius: 0.3125rem;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem 0rem hsl(229, 6%, 66%);
+  }
+  .contain-info > .team-builder > h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.5625rem;
+    grid-row-start: 1;
+    color: hsl(234, 12%, 34%);
+  }
+
+  .contain-info > .team-builder > p {
+    width: 16.875rem;
+    grid-row-start: 2;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9375rem;
+  }
+  .contain-info > .team-builder > img {
+    grid-row-start: 10;
+    grid-column-start: 7;
+  }
+  .contain-info > .karma {
+    width: 19.0625rem;
+    height: 13.75rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: repeat(2, 5rem);
+    grid-template-rows: repeat(2, 2.8125rem);
+    background-color: white;
+    display: grid;
+    padding: 1.25rem;
+    border-top: 0.3125rem solid hsl(34, 97%, 64%);
+    border-radius: 0.3125rem;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem 0rem hsl(229, 6%, 66%);
+  }
+  .contain-info > .karma > h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.5625rem;
+    grid-row-start: 1;
+    color: hsl(234, 12%, 34%);
+  }
+
+  .contain-info > .karma > p {
+    width: 16.875rem;
+    grid-row-start: 2;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9375rem;
+  }
+  .contain-info > .karma > img {
+    grid-row-start: 10;
+    grid-column-start: 7;
+  }
+  .contain-info > .calculator {
+    width: 19.0625rem;
+    height: 13.75rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: repeat(2, 5rem);
+    grid-template-rows: repeat(2, 2.8125rem);
+    background-color: white;
+    display: grid;
+    padding: 1.25rem;
+    border-top: 0.3125rem solid hsl(212, 86%, 64%);
+    border-radius: 0.3125rem;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem 0rem hsl(229, 6%, 66%);
+  }
+  .contain-info > .calculator > h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.5625rem;
+    grid-row-start: 1;
+    color: hsl(234, 12%, 34%);
+  }
+
+  .contain-info > .calculator > p {
+    width: 16.875rem;
+    grid-row-start: 2;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9375rem;
+  }
+  .contain-info > .calculator > img {
+    grid-row-start: 10;
+    grid-column-start: 7;
+  }
+
+  footer {
+    width: 23.75rem;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+}
